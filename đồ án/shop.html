@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+        .cart-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .cart-item, .card-details {
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .card-details {
+            background-color: #4a3aff;
+            color: #fff;
+        }
+        .btn-checkout {
+            background-color: #37f993;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container row">
+        <!-- Cart Items Section -->
+        <div class="col-md-7">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5>Giỏ hàng</h5>
+                <a href="#" class="text-warning">Tiếp tục mua sắm</a>
+            </div>
+            <div class="cart-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="img/cfcapuchino.jpg" alt="Cà phê Cappuccino" class="img-thumbnail" style="width: 60px;">
+                    <div>
+                        <h6>Cà phê Cappuccino</h6>
+                        <small>Giá: 55.000 VNĐ</small>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-outline-secondary btn-sm">-</button>
+                        <span class="mx-2">1</span>
+                        <button class="btn btn-outline-secondary btn-sm">+</button>
+                    </div>
+                    <h6>55.000 VNĐ</h6>
+                    <button class="btn btn-danger btn-sm">&times;</button>
+                </div>
+            </div>
+            
+            <div class="cart-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="img/cfcapuchino.jpg" alt="Cà phê Cappuccino" class="img-thumbnail" style="width: 60px;">
+                    <div>
+                        <h6>Cà phê Cappuccino</h6>
+                        <small>Giá: 55.000 VNĐ</small>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-outline-secondary btn-sm">-</button>
+                        <span class="mx-2">1</span>
+                        <button class="btn btn-outline-secondary btn-sm">+</button>
+                    </div>
+                    <h6>55.000 VNĐ</h6>
+                    <button class="btn btn-danger btn-sm">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Details Section -->
+        <div class="col-md-5">
+            <div class="card-details p-4">
+                <h5>Chi tiết thanh toán</h5>
+                <div class="form-group">
+                    <label for="cardType">Loại thẻ</label>
+                    <div class="d-flex">
+                        <img src="img/visa.png" alt="Visa" class="img-thumbnail" style="width: 40px;">
+                        <img src="img/mastercart.png" alt="MasterCard" class="img-thumbnail" style="width: 40px;">
+                        <img src="img/momo.png" alt="Momo" class="img-thumbnail" style="width: 40px;">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cardName">Tên trên thẻ</label>
+                    <input type="text" class="form-control" id="cardName" placeholder="Tên của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Số thẻ</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="1111 2222 3333 4444">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="expDate">Ngày hết hạn</label>
+                        <input type="text" class="form-control" id="expDate" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv" placeholder="123">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <h6>Tạm tính</h6>
+                    <h6>3,000,000 VNĐ</h6>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <h6>Phí vận chuyển</h6>
+                    <h6>20,000 VNĐ</h6>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <h5>Tổng cộng (bao gồm thuế)</h5>
+                    <h5>3,820,000 VNĐ</h5>
+                </div>
+                <button class="btn btn-checkout btn-block mt-4">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

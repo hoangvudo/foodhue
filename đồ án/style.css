@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: 251px;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.btn-cart, .btn-login {
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.btn-cart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.btn-cart:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-cart .badge {
+    font-size: 12px;
+    padding: 2px 4px;
+}
+
+.btn-login {
+    background-color: #ffca2c;
+    color: #fff;
+    border: none;
+}
+
+.btn-login:hover {
+    background-color: #ffba00;
+}
+
+.search-box {
+    width: 300px;
+    border-radius: 20px;
+    padding-left: 15px;
+    border: 1px solid #ddd;
+}
+
+.search-box:focus {
+    border-color: #f0ad4e;
+    box-shadow: none;
+}
+
+.d-flex.align-items-center.box {
+    margin-right: 152px;
+}
+
+.main {
+    background-color: #ffba00;
+    height: 600px;
+}
+
+h1.text-white.text-center.mt-5 {
+    font-size: 71px;
+}
+
+.slider {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.slider .card, .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover, .slider .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.badge-discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+h5.card-title {
+    margin-top: 23px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.order-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff6df;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.order-type {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.order-type .btn {
+    border: none;
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #999;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.order-type .btn i {
+    margin-right: 8px;
+}
+
+.order-type .btn.active {
+    background-color: #ffe6cc;
+    color: #ff865c;
+    font-weight: bold;
+}
+
+.address-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.input-container i {
+    color: #ff865c;
+    margin-right: 10px;
+}
+
+.input-container input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.find-food-btn {
+    background-color: #ff865c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.find-food-btn:hover {
+    background-color: #ff6432;
+}
+a {
+    text-decoration: none;
+}
+footer {
+    background-color: #000000 !important;
+    padding: 30px 0; /* Padding cho footer */
+}
+
+footer h5 {
+    font-weight: bold; /* Làm đậm tiêu đề */
+}
+
+footer a {
+    color: #007bff; /* Màu cho các liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+.banner {
+    background-image: url('img/banner.png'); /* Add your banner image here */
+    background-size: cover; /* Ensure the image covers the entire banner */
+    background-position: center; /* Center the image */
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+}
+.box-banner {
+    width: 100%; /* Ensure the box takes full width */
+    padding: 20px; /* Add padding for spacing */
+    margin-bottom: 40px; /* Adjust this value to move the text higher */
+}
+
+.text-white {
+    color: white; /* White text color */
+}
